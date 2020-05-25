@@ -22,8 +22,8 @@ node ('master'){
     
     stage('Pull-image-server') {
     
-         sh "docker-compose down"
-         sh "docker-compose up -d"	
+         sh "/usr/local/bin/docker-compose down"
+         sh "/usr/local/bin/docker-compose up -d"	
       }
     
    
