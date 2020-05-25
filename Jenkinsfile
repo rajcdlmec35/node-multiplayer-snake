@@ -22,8 +22,8 @@ node ('master'){
     
     stage('Pull-image-server') {
     
-         sh "/home/jenkins/docker-jenkins/jenkins_data/tools/docker-compose down"
-         sh "/home/jenkins/docker-jenkins/jenkins_data/tools/docker-compose up -d"	
+         sh "docker-compose down"
+         sh "docker-compose up -d"	
       }
     
    
